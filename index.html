@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santhosh">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-header__title">Mini-Calculator</h1>
+         <img src="Images/pocket-calculator.svg" alt="">
+    </header>
+
+
+    <main class="main-content">
+        <div class="main-content__calculator">
+            <input type="text" id="display" class="display" disabled>
+           
+                <button class="button clear" onclick="clearDisplay()">C</button>
+
+                <button class="button operator plus" onclick="appendOperator('+')">+</button>
+                <button class="button operator minus" onclick="appendOperator('-')">-</button>
+                <button class="button operator multiply" onclick="appendOperator('*')">x</button>
+                <button class="button operator divide" onclick="appendOperator('/')">/</button>
+                <button class="button operator equal" onclick="appendOperator('=')">=</button>
+
+                <button class="button num" onclick="appendNumber('1')">1</button>
+                <button class="button num" onclick="appendNumber('2')">2</button>
+                <button class="button num" onclick="appendNumber('3')">3</button>
+                <button class="button num" onclick="appendNumber('4')">4</button>
+                <button class="button num" onclick="appendNumber('5')">5</button>
+                <button class="button num" onclick="appendNumber('6')">6</button>
+                <button class="button num" onclick="appendNumber('7')">7</button>
+                <button class="button num" onclick="appendNumber('8')">8</button>
+                <button class="button num" onclick="appendNumber('9')">9</button>
+                <button class="button num" onclick="appendNumber('0')">0</button>
+
+                
+            
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__copyright">
+            &copy; 2025 Santhosh Sandy. All rights reserved.
+        </p>
+
+    </footer>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
